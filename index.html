@@ -17,20 +17,20 @@
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
 
-                <form name="registe_form" id="register_form" action="" method="POST" onsubmit="return register()">
+                <form name="register_form" id="register_form" action="" method="POST" onsubmit="return register()">
                     <br/><br/>
                 <label for="fullname" class="form-label">Full Name</label>
                 <input type="text" 
-                required
+                
                 name="fullname"
                 maxlength="10" 
                  id="fullname" 
                  class="form-control" 
                  placeholder="FullName" />
+                 <div id="fullname_alert" style="color:red;"></div>
 
                 <label for="email" class="form-label">Email</label>
                 <input type="email" 
-                required
                 name="email"
                  id="email" 
                  class="form-control" 
@@ -38,7 +38,6 @@
 
                  <label for="password" class="form-label">Password</label>
                 <input type="password" 
-                required
                 name="password"
                  id="password" 
                  class="form-control" 
@@ -54,7 +53,6 @@
         </div>
 
     </div>
-
 
     <script src="./script.js"></script>
 </body>
